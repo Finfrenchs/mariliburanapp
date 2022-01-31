@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color1">#ADB9B7</color>
+    <color name="appBarColor">#16A085</color>
+    <color name="appBarSlideColor">#1AAE91</color>
+    <color name="toolBarTextColor">#FFFFFF</color>
+    <color name="colorPriceTransport">#1EA5AF</color>
+    <color name="colorDriverIncdel">#ABABAB</color>
+    <color name="colorBGLayout">#EFEFEF</color>
+</resources>

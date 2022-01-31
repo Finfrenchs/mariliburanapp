@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    app:cardElevation="4dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_image"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cr_v_2019"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/item_cars_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cars Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_alignLeft="@+id/item_image"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="160dp"/>
+        <TextView
+            android:id="@+id/item_type_transmisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Tranmitions Type"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/item_cars_name"
+            android:layout_alignLeft="@+id/item_image"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="158dp"/>
+
+        <TextView
+            android:id="@+id/item_price_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Rent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/colorPriceTransport"
+            android:layout_below="@+id/item_type_transmisi"
+            android:layout_alignLeft="@+id/item_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="160dp"/>
+
+        <TextView
+            android:id="@+id/item_include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Driver"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:textColor="@color/colorDriverIncdel"
+            android:layout_below="@+id/item_price_rent"
+            android:layout_alignLeft="@+id/item_image"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="160dp"
+            android:drawableLeft="@drawable/car_steering_wheel_2"/>
+
+        <TextView
+            android:id="@+id/item_detil"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="See detail"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/toolBarTextColor"
+            android:layout_below="@+id/item_include"
+            android:layout_alignLeft="@+id/item_image"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="241dp"
+            android:background="@drawable/bg_seedetail_transport"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="onClickSeeCar"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

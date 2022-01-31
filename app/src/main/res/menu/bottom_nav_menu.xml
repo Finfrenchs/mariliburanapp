@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home"/>
+
+    <item
+        android:id="@+id/navigation_tourtrip"
+        android:icon="@drawable/ic_tourtrip"
+        android:title="@string/title_tourtrip"/>
+
+    <item
+        android:id="@+id/navigation_akomodasi"
+        android:icon="@drawable/ic_akomodation"
+        android:title="@string/title_akomodasi"/>
+
+    <item
+        android:id="@+id/navigation_transport"
+        android:icon="@drawable/ic_transportation"
+        android:title="@string/title_transport"/>
+
+    <item
+        android:id="@+id/navigation_transaksi"
+        android:icon="@drawable/ic_transaction"
+        android:title="@string/title_transaksi"/>
+
+</menu>

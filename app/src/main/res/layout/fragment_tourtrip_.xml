@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tourtrip_Frag"
+    android:background="#F5F3F3"
+    android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/barTourTrip"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            app:popupTheme="@style/AppTheme"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/toolbarText_TourTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Tour Trip"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_layout"
+            android:elevation="1dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="12dp"
+            android:text="Search Here"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/Search_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignRight="@id/edtSearch"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="-61dp"
+            android:background="@drawable/search_button_bg"
+            android:elevation="10dp"
+            android:src="@drawable/ic_search" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edtSearch"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/txtInfoTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150 Trip Found"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="12dp"
+            android:text="Filter"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/ic_filter"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtInfoTrip"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#FFFFFF">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="16dp"
+                    android:background="@drawable/bg_template_tourtrip">
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="280dp"
+                        android:background="@drawable/bg_template_tourtrip">
+
+                        <ImageView
+                            android:id="@+id/picBalekambangtrip1"
+                            android:layout_width="match_parent"
+                            android:layout_height="201dp"
+                            android:src="@drawable/balekambang_picture" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:text="Start From Surabaya"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/bg_label_start_destinasi"
+                            android:drawableLeft="@drawable/ic_baseline_location_on_24px"/>
+
+                        <TextView
+                            android:id="@+id/txtPicBalekambangTrip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pantai Balekambang"
+                            android:textColor="#000000"
+                            android:layout_below="@+id/picBalekambangtrip1"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/picBalekambangtrip1"
+                            android:layout_alignLeft="@+id/txtPicBalekambangTrip"
+                            android:layout_marginLeft="214dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="IDR 700.000"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtPicBalekambangTrip"
+                            android:layout_marginTop="10dp"
+                            android:text="Malang"
+                            android:textColor="#707070"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:drawableLeft="@drawable/ic_location_hijau"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="5dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_template_tourtrip">
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="280dp"
+                        android:background="@drawable/bg_template_tourtrip"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/picBalekambangtrip12"
+                            android:layout_width="match_parent"
+                            android:layout_height="201dp"
+                            android:src="@drawable/balekambang_picture" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:text="Start From Surabaya"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/bg_label_start_destinasi"
+                            android:drawableLeft="@drawable/ic_baseline_location_on_24px"/>
+
+                        <TextView
+                            android:id="@+id/txtPicBalekambangTrip2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pantai Balekambang"
+                            android:textColor="#000000"
+                            android:layout_below="@+id/picBalekambangtrip12"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/picBalekambangtrip12"
+                            android:layout_alignLeft="@+id/txtPicBalekambangTrip2"
+                            android:layout_marginLeft="214dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="IDR 700.000"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtPicBalekambangTrip2"
+                            android:layout_marginTop="10dp"
+                            android:text="Malang"
+                            android:textColor="#707070"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:drawableLeft="@drawable/ic_location_hijau"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
